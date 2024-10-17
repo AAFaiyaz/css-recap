@@ -3,14 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Flexbox layout</title>
     <style>
-      h1 {
-        color: red;
+      nav {
+        display: flex;
+        justify-content: space-around;
+      }
+      nav a {
+        text-decoration: none;
+        color: black;
       }
     </style>
   </head>
   <body>
-    <h1>My Heading</h1>
+    <nav>
+      <div>
+        <a href="">Home</a>
+        <a href="">Profile</a>
+        <a href="">Blog</a>
+      </div>
+      <a href="">Login</a>
+    </nav>
+    <form action="">
+      <h3>Please Login</h3>
+      <input type="email" placeholder="Your Email" />
+      <input type="password" placeholder="Your password" />
+      <input type="submit" value="Login" />
+    </form>
   </body>
 </html>
